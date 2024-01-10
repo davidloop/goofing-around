@@ -133,19 +133,17 @@
         @layer demo.support {
          
             body {
-                display: grid;
-                place-content: center;
                 padding: var(--size-5);
-                gap: var(--size-5);
+                font-family: var(--font-sans);
+                display: grid;
+                gap: var(--size-4);
+                place-content: center;
             }
 
-            h1 {
-                font-family: var(--font-sans);
-                font-size: var(--font-size-fluid-0);
-                font-weight: var(--font-weight-4);
-                display: grid;
-                grid-template-columns: max-content;
-                place-self: center;
+            p {
+                margin: 0 auto;
+                font-size: var(--font-size-0);
+                text-align: center;
             }
 
             .container {
@@ -172,6 +170,12 @@
                 display: flex;
                 place-content: center;
                 gap: var(--size-2);
+
+                button {
+                    min-width: var(--size-11);
+                    padding: var(--size-2);
+                    font-size: var(--font-size-0);
+                }
             }
         }
     </style>
@@ -179,7 +183,12 @@
 </head>
 <body>
 
-    <h1>CSS Grid with Open Props</h1>
+    <p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer" target="_blank">CSS Layer</a>,
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/container" target="_blank">CSS Container</a>,
+        <a href="https://developer.chrome.com/docs/web-platform/view-transitions" target="_blank">View Transitions API</a>,
+        <a href="https://open-props.style" target="_blank">Open Props</a>
+    </p>
     <div class="container">
         <main class="always-great-grid" id="grid">
             <div class="box" style="view-transition-name: b0"></div>
